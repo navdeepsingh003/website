@@ -1,0 +1,8 @@
+let srch = document.getElementById('frm');
+let srchicon = document.getElementById('srchicon');
+srch.onsubmit = search;
+srchicon.onclick = search;
+function search(){
+    window.location = 'https://www.google.com/search?q='+document.getElementById('txt').value;
+    return false;
+}
